@@ -30,10 +30,10 @@
 
 			<property name="hibernate.c3p0.acquire_increment" value="1"/>
 			<property name="hibernate.c3p0.idle_test_period" value="300"/>
-			<property name="hibernate.c3p0.timeout" value="30000"/>
-			<property name="hibernate.c3p0.max_size" value="20"/>
-			<property name="hibernate.c3p0.min_size" value="5"/>
-			<property name="hibernate.c3p0.max_statement" value="0"/>
+			<property name="hibernate.c3p0.timeout" value="3000000000000"/>
+			<property name="hibernate.c3p0.max_size" value="50"/>
+			<property name="hibernate.c3p0.min_size" value="10"/>
+			<property name="hibernate.c3p0.max_statement" value="20"/>
 			<property name="hibernate.c3p0.preferredTestQuery" value="select 1;"/>
 		</properties>
 	</persistence-unit>
