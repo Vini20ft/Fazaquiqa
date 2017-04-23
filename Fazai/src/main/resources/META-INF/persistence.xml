@@ -19,12 +19,18 @@
       <properties>
          <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
          <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://us-cdbr-iron-east-03.cleardb.net:3306/heroku_c442dd523859149"/>
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://us-cdbr-iron-east-03.cleardb.net:3306/heroku_c442dd523859149?autoReconnect=true"/>
          <property name="javax.persistence.jdbc.user" value="bd4abfb6611ab8"/>
          <property name="javax.persistence.jdbc.password" value="24f1da8f"/>  
          <property name="hibernate.show_sql" value="true"/>
          <property name="hibernate.format_sql" value="true"/>
          <property name="hibernate.hbm2ddl.auto" value="update"/>
+         
+         <property name="hibernate.c3p0.min_size" value="5"/>
+         <property name="hibernate.c3p0.max_size" value="15"/>
+  		 <property name="hibernate.c3p0.timeout" value="400"/>
+  		 <property name="hibernate.c3p0.max_statements" value="50"/>
+         <property name="hibernate.c3p0.idle_test_period" value="3000"/>
       </properties>
    </persistence-unit>
 </persistence>
