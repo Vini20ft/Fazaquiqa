@@ -29,17 +29,10 @@
 	<mvc:default-servlet-handler/>
  
  	
- 	<bean class="java.net.URI" id="dbUrl">
-    <constructor-arg value="#{systemEnvironment['CLEARDB_DATABASE_URL']}"/>
-    </bean>
     
  	 <!-- GERENCIAMENTO DO JPA PELO SPRING-->
-	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"> 
-	 	<property name="url" value="#{ 'jdbc:mysql://' + @dbUrl.getHost() + @dbUrl.getPath() }"/>
-    	<property name="username" value="#{ @dbUrl.getUserInfo().split(':')[0] }"/>
-    	<property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }"/>    
-    	<property name="persistenceUnitName" value="PERSISTENCE_UNIT" />	
-    	     
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">    
+    	<property name="persistenceUnitName" value="PERSISTENCE_UNIT" />		     
  	</bean>
  	
  
