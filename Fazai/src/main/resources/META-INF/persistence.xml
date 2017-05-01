@@ -20,7 +20,7 @@
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://fazai.mysql.uhserver.com:3306/fazai" />
+				value="jdbc:mysql://fazai.mysql.uhserver.com:3306/fazai?autoReconnect=true" />
 			<property name="javax.persistence.jdbc.user" value="fazai" />
 			<property name="javax.persistence.jdbc.password" value="projeto@2017" />
 			<property name="hibernate.show_sql" value="true" />
