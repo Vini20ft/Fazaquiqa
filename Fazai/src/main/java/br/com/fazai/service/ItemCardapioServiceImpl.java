@@ -6,9 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.fazai.dao.FuncionarioDAO;
 import br.com.fazai.dao.ItemCardapioDAO;
-import br.com.fazai.model.Funcionario;
 import br.com.fazai.model.ItemCardapio;
 
 
@@ -52,7 +50,12 @@ public class ItemCardapioServiceImpl implements ItemCardapioService{
 
 	@Override
 	public List<ItemCardapio> TodosItens() {	
-		return this.itemcardapioDAO.TodosItems();
+		return this.itemcardapioDAO.todosItems();
+	}
+
+	@Override
+	public List<ItemCardapio> todosItemsporCardapio(int codigo_cardapio) {
+	    return this.itemcardapioDAO.todosItemsporCardapio(codigo_cardapio);
 	}
 
 }

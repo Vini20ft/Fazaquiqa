@@ -7,13 +7,11 @@ import br.com.fazai.model.ItemCardapio;
 public interface ItemCardapioDAO {
 
 	void salvarItemCardapio(ItemCardapio itemcardapio);
-
 	void alterarItemCardapio(ItemCardapio itemcardapio);
-
 	ItemCardapio consultarItemCardapioPorCodigo(int codigo);
-
 	void Excluir(int codigo);
-
-	List<ItemCardapio> TodosItems();
+	List<ItemCardapio> todosItems();
+	List<ItemCardapio> todosItemsporCardapio(int codigo_cardapio);
+	
 
 }

@@ -1,39 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence
-	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
-								http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
-	version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://java.sun.com/xml/ns/persistence">
-
-	<persistence-unit name="PERSISTENCE_UNIT"
-		transaction-type="RESOURCE_LOCAL">
-		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<class>br.com.fazai.model.Cardapio</class>
-		<class>br.com.fazai.model.Consumidor</class>
-		<class>br.com.fazai.model.Estabelecimento</class>
-		<class>br.com.fazai.model.Id</class>
-		<class>br.com.fazai.model.ItemCardapio</class>
-		<!-- <class>br.com.fazai.model.Pagamento</class> á definir -->
-		<class>br.com.fazai.model.Pedido_Cardapio_Item</class>
-		<class>br.com.fazai.model.Pedido</class>
-
-		<properties>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
-		    <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://sql9.freemysqlhosting.net:3306/sql9171849?autoReconnect=true" />
-			<property name="javax.persistence.jdbc.user" value="sql9171849" />
-			<property name="javax.persistence.jdbc.password" value="HEl39Jae7P" />
-			<property name="hibernate.show_sql" value="true" />
-			<property name="hibernate.format_sql" value="true" />
-			<property name="hibernate.hbm2ddl.auto" value="update" />
-
-			<property name="hibernate.c3p0.acquire_increment" value="1"/>
-			<property name="hibernate.c3p0.idle_test_period" value="1000"/>
-			<property name="hibernate.c3p0.timeout" value="144000"/>
-			<property name="hibernate.c3p0.max_size" value="10"/>
-			<property name="hibernate.c3p0.min_size" value="5"/>
-			<property name="hibernate.c3p0.max_statement" value="20"/>
-			<property name="hibernate.c3p0.preferredTestQuery" value="select 1;"/>
-		</properties>
-	</persistence-unit>
+<persistence xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+								http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" 
+			 version="2.0" 
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			 xmlns="http://java.sun.com/xml/ns/persistence">
+ 
+   <persistence-unit name="PERSISTENCE_UNIT" transaction-type="RESOURCE_LOCAL">
+      <provider>org.hibernate.ejb.HibernatePersistence</provider>
+     <class>br.com.fazai.model.Cardapio</class>
+      <class>br.com.fazai.model.Consumidor</class>
+      <class>br.com.fazai.model.Estabelecimento</class>
+      <class>br.com.fazai.model.Id</class>
+      <class>br.com.fazai.model.ItemCardapio</class>
+      <!--   <class>br.com.fazai.model.Pagamento</class> á definir -->
+      <class>br.com.fazai.model.Pedido_Cardapio_Item</class>
+      <class>br.com.fazai.model.Pedido</class>
+      <properties>
+         <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+         <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/fazai"/>
+         <property name="javax.persistence.jdbc.user" value="root"/>
+         <property name="javax.persistence.jdbc.password" value="1234"/>  
+         <property name="hibernate.show_sql" value="true"/>
+         <property name="hibernate.format_sql" value="true"/>
+         <property name="hibernate.hbm2ddl.auto" value="update"/>
+      </properties>
+   </persistence-unit>
 </persistence>
