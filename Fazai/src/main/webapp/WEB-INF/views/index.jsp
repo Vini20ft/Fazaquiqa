@@ -5,15 +5,15 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<title>Insert title here</title>
+		<title>Servico</title>
 	</head>
 
 	<body>
-		<h2>Spring MVC e AngularJS</h2>
-
 		<ul style="list-style-type:square">
-			<li><a href="usuario/cadastrar.html">Cadastrar</a></li>
-			<li><a href="usuario/consultarRegistros.html">Consultar</a></li>
+			<li><a href="https://fazaqui.herokuapp.com/estabelecimento/estabelecimentosList/cidade=recife">Estabelecimento(passar cidade)</a></li>
+			<li><a href="https://fazaqui.herokuapp.com/estabelecimento/estabelecimentoList/codigo=1">Estabelecimento Detalhe(passar id do Estabelecimento)</a></li>
+			<li><a href="https://fazaqui.herokuapp.com/cardapio/cardapioList/codigo=1">Cardapios (passar id do Estabelecimento)</a></li>
+			<li><a href="https://fazaqui.herokuapp.com/itemcardapio/itemCardapioList/codigo=1">Itens Cardapio(passar id do Cardapio)</a></li>
 		</ul>
 
 	</body>
