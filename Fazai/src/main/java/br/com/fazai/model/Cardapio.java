@@ -20,7 +20,7 @@ public class Cardapio {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_cardapio_pk")
 	private int id_cardapio;
-	@Column(name = "st_url_imagem", length = 50, nullable = false)
+	@Column(name = "st_url_imagem", length = 550, nullable = false)
 	private String imagem_cardapio;
 	@Column(name = "st_descricao", length = 500, nullable = true)
 	private String descricao_cardapio;

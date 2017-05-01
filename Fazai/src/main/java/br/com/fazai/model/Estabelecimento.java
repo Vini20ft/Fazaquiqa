@@ -33,7 +33,7 @@ public class Estabelecimento {
     private String razaoSocial_estabelecimento;
     @Column(name = "st_especialidade", length = 120, nullable = false)
     private String especialidade_estabelecimento;
-    @Column(name = "st_urlImage", length = 120, nullable = false)
+    @Column(name = "st_urlImage", length = 320, nullable = false)
     private String url_image_Estabelecimento;
     @Column(name = "st_latitude", length = 120, nullable = false)
     private String latitude_estabelecimento;
